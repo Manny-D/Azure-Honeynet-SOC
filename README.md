@@ -32,23 +32,26 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![SQL Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/a02db775-8744-4c07-8d54-5fc7faaf8731)
+![NSG Allowed Inbound Malicious Flows](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/d6eb318c-f683-4b48-bcab-7c644ad29887)
+![Linux Syslog Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/7d8df50f-e641-4ab1-b393-b14446b5bee8)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/8fa6a3fd-7a07-4adf-b409-151846a9c6a3)<br>
+
+
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+- Start Time: 8/26/2023, 1:25:15.182 PM
+- Stop Time: 8/27/2023, 1:25:15.182 PM
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 15319
+| Syslog                   | 3728
+| SecurityAlert            | 2
+| SecurityIncident         | 175
+| AzureNetworkAnalytics_CL | 2159
 
 ## Attack Maps Before Hardening / Security Controls
 
