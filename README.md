@@ -24,7 +24,7 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
+- Virtual Machines (2 Windows, 1 Linux)
 - Log Analytics Workspace
 - Azure Key Vault
 - Azure Storage Account
