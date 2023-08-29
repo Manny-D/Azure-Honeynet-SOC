@@ -34,17 +34,11 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 
 ### Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
-<br>
-
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
 </br>
 
 ### Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
-<br>
-
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 </br>
 
@@ -80,6 +74,10 @@ The following table shows the metrics measured in the insecure environment for 2
 | SecurityIncident         | 175
 | AzureNetworkAnalytics_CL | 2159
 
+<br>
+
+<b>Note</b>: All resources were originally deployed / exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+
 </br>
 
 ## Attack Maps After Hardening / Security Controls
@@ -101,6 +99,11 @@ The following table shows the metrics measured in the environment for another 24
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
+
+<br>
+
+<b>Note</b>: Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+
 </br>
 
 ## Results Metrics:</br>
