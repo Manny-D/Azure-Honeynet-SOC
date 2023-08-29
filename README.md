@@ -91,8 +91,8 @@ The following table shows the metrics measured in the environment for another 24
 | AzureNetworkAnalytics_CL | 0
 </br>
 
-## Result Metrics:</br>
-<img width="693" alt="Screenshot 2023-08-28 at 8 11 20 PM" src="https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/7b4aa154-434b-4531-bb01-f7230a0c42e9">
+## Results Metrics:</br>
+<img width="693" alt="Results" src="https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0a31f0ce-d822-439f-bc00-3aaf453c7c4b)">
 
 </br>
 
