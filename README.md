@@ -51,16 +51,17 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 
-SecurityEvent (Windows Event Logs)
-![Windows RDP/SMB Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/1f3583a9-ce1b-4870-b66a-18a1131c88ee)<br><br>
+- SecurityEvent (Windows Event Logs)
+  - ![Windows RDP/SMB Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/1f3583a9-ce1b-4870-b66a-18a1131c88ee)<br><br>
 
-Syslog (Linux Event Logs)
-![Linux Syslog Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0550dced-78ff-45f4-8846-c90d9aeb45c1)<br><br>
+- Syslog (Linux Event Logs)
+  - ![Linux Syslog Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0550dced-78ff-45f4-8846-c90d9aeb45c1)<br><br>
 
-AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
-![NSG Allowed Inbound Malicious Flows](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0c5eaf9e-38b3-4f38-8be9-688e50d49d1a)<br><br>
+- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+  - ![NSG Allowed Inbound Malicious Flows](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0c5eaf9e-38b3-4f38-8be9-688e50d49d1a)<br><br>
 
-![SQL Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/64d54819-f953-455a-a7a6-b177b6ec853a)<br><br>
+- Event / EvenLog (MS SQL Server brute force logs) 
+  - ![SQL Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/64d54819-f953-455a-a7a6-b177b6ec853a)<br><br>
 
 </br>
 
@@ -105,8 +106,7 @@ The following table shows the metrics measured in the environment for another 24
 ## Results Metrics:</br>
 <img width="693" alt="Results" src="https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/af6a8ea8-9526-48a7-8849-fe25feb19a6d)">
 
-
-</br>
+</br></br>
 
 ## Conclusion
 
