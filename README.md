@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/e747ba66-1fee-43ce-9610-f4d8bf174403)
+![Cloud Honeynet / SOC](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/ccf7a1c7-9c85-4a2e-9d32-b5cb78adfaa6)
+
 
 </br>
 
@@ -9,7 +10,7 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 
 </br>
 
-The metrics I will show are:
+### The metrics I will show are:
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
@@ -19,17 +20,7 @@ The metrics I will show are:
 
 </br>
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
-
-</br>
-
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
-
-</br>
-
-The architecture of the mini honeynet in Azure consists of the following components:
+### The architecture of the mini honeynet in Azure consists of the following components:
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
@@ -39,17 +30,37 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
+</br>
+
+### Architecture Before Hardening / Security Controls
+![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+<br>
+
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+
+</br>
+
+### Architecture After Hardening / Security Controls
+![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+<br>
 
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 </br>
 
+
 ## Attack Maps Before Hardening / Security Controls
-![SQL Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/a02db775-8744-4c07-8d54-5fc7faaf8731)
-![NSG Allowed Inbound Malicious Flows](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/d6eb318c-f683-4b48-bcab-7c644ad29887)
-![Linux Syslog Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/7d8df50f-e641-4ab1-b393-b14446b5bee8)<br>
-![Windows RDP/SMB Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/8fa6a3fd-7a07-4adf-b409-151846a9c6a3)<br>
+
+SecurityEvent (Windows Event Logs)
+![Windows RDP/SMB Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/1f3583a9-ce1b-4870-b66a-18a1131c88ee)<br><br>
+
+Syslog (Linux Event Logs)
+![Linux Syslog Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0550dced-78ff-45f4-8846-c90d9aeb45c1)<br><br>
+
+AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+![NSG Allowed Inbound Malicious Flows](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0c5eaf9e-38b3-4f38-8be9-688e50d49d1a)<br><br>
+
+![SQL Auth Failures](https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/64d54819-f953-455a-a7a6-b177b6ec853a)<br><br>
 
 </br>
 
@@ -92,7 +103,8 @@ The following table shows the metrics measured in the environment for another 24
 </br>
 
 ## Results Metrics:</br>
-<img width="693" alt="Results" src="https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/0a31f0ce-d822-439f-bc00-3aaf453c7c4b)">
+<img width="693" alt="Results" src="https://github.com/Manny-D/Azure-Honeynet-SOC/assets/99146530/af6a8ea8-9526-48a7-8849-fe25feb19a6d)">
+
 
 </br>
 
