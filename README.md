@@ -6,9 +6,9 @@
 
 ## Introduction
 
-In this project, I built a mini honeynet in Azure and ingested log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. <br>
+In this project, I built a mini honeynet in Azure and ingested log sources from various resources into a Log Analytics workspace, which were then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents that were triaged and remediated in my [Incident-Response lab](https://github.com/Manny-D/Incident-Response). <br>
 <br>
-Initially I measured some security metrics in the insecure environment for 24 hours, then applied some security controls to harden the environment, measured metrics for another 24 hours, and documented the results below. 
+An insecure environment was baselined for 24 hours through security metric measurements. Following the implementation of various security controls, the environment was re-evaluated for another 24 hours. This report details the findings.
 
 </br>
 
